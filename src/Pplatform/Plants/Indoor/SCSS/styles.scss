@@ -1,0 +1,207 @@
+.image-slider {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 400px;
+  height: 400px;
+}
+.Plant-Container {
+  height: 24rem;
+  float: left;
+  overflow-y: auto;
+  width: 85%;
+}
+.Plant-Container .Plant-inner-cover {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  background-color: beige;
+  margin-top: 2%;
+  grid-row-gap: 25px;
+  margin-left: 15px;
+  margin-bottom: 1rem;
+}
+.Plant-Container .Plant-inner-cover .indoor-plant-box {
+  background-color: white;
+  height: 22rem;
+  box-shadow: 0px 3px 6px #2c28281c;
+  border-radius: 10px;
+  margin: 1rem;
+}
+.Plant-Container
+  .Plant-inner-cover
+  .indoor-plant-box
+  .Indoor-plant-box-know-more {
+  display: table;
+  margin: 0 auto;
+  color: white;
+  background-color: #5b9c30;
+  border: 2px solid #5b9c30;
+  padding: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.Plant-Container
+  .Plant-inner-cover
+  .indoor-plant-box
+  .Indoor-plant-box-know-more:hover {
+  background-color: #498124;
+  border: 2px solid #498124;
+  color: white;
+}
+.Plant-Container .Plant-inner-cover .indoor-plant-box .Indoor-plant-box-Buy {
+  display: table;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-left: 0px;
+  color: green;
+  border: 2px solid greenyellow;
+  padding: 5px;
+}
+.Plant-Container
+  .Plant-inner-cover
+  .indoor-plant-box
+  .Indoor-plant-box-Buy:hover {
+  background-color: greenyellow;
+  border: 2px solid greenyellow;
+  color: white;
+}
+.Plant-Container .Plant-inner-cover .indoor-plant-box h1 {
+  font-size: 0.8rem;
+  margin: 1rem;
+}
+.Plant-Container .Plant-inner-cover .indoor-plant-box p {
+  font-size: 1rem;
+}
+.Plant-Container .Plant-inner-cover .indoor-plant-box img {
+  page-break-after: 1rem;
+  height: 180px;
+  margin: 0 auto;
+  width: 180px;
+  display: block;
+  margin-bottom: 2rem;
+}
+.View-plant-container {
+  height: 24rem;
+  float: left;
+  overflow-y: auto;
+  width: 85%;
+}
+.View-plant-container .view-plant-inner-cover {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-left: 15px;
+  margin-bottom: 1rem;
+}
+.View-plant-container
+  .view-plant-inner-cover
+  .view-plant-inner-cover-left-block {
+  background-color: white;
+  height: 80rem;
+  position: relative;
+  margin: 0.5rem;
+  box-shadow: 0px 0px 8px lightgrey;
+  border-radius: 5px;
+}
+.View-plant-container
+  .view-plant-inner-cover
+  .view-plant-inner-cover-right-block {
+  background-color: white;
+  height: 30rem;
+  position: relative;
+  margin: 0.5rem;
+  box-shadow: 0px 0px 12px lightgrey;
+  border-radius: 5px;
+}
+.View-plant-container
+  .view-plant-inner-cover
+  .view-plant-inner-cover-right-block
+  .Indoor-plant-box-Buy {
+  display: table;
+  margin: 0 auto;
+  cursor: pointer;
+  color: green;
+  border: 2px solid greenyellow;
+  padding: 5px;
+  width: 90%;
+  margin-top: 6rem;
+  text-align: center;
+}
+.View-plant-container
+  .view-plant-inner-cover
+  .view-plant-inner-cover-right-block
+  .Indoor-plant-box-Buy:hover {
+  background-color: greenyellow;
+  border: 2px solid greenyellow;
+  color: white;
+}
+.View-plant-container
+  .view-plant-inner-cover
+  .view-plant-inner-cover-right-block
+  h1 {
+  font-size: 0.8rem;
+  margin: 1rem;
+}
+.View-plant-container
+  .view-plant-inner-cover
+  .view-plant-inner-cover-right-block
+  p {
+  font-size: 1rem;
+}
+.View-plant-container
+  .view-plant-inner-cover
+  .view-plant-inner-cover-left-block
+  h1 {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+.View-plant-container
+  .view-plant-inner-cover
+  .view-plant-inner-cover-left-block
+  span {
+  font-size: 0.8rem;
+}
+.a {
+  height: 87px;
+  margin: 0 auto;
+  border-radius: 50%;
+  position: absolute;
+  top: 128px;
+  left: 121px;
+  width: 88px;
+  display: block;
+  margin-bottom: 2rem;
+}
+.a:hover {
+  height: 251px;
+  border-radius: 0%;
+  margin: 0 auto;
+  position: absolute;
+  top: 40px;
+  left: 52px;
+  width: 250px;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .Plant-Container .Plant-inner-cover {
+    grid-template-columns: none;
+  }
+  .Plant-Container
+    .Plant-inner-cover
+    .indoor-plant-box
+    .Indoor-plant-box-know-more {
+    font-size: 10px;
+  }
+  .Plant-Container .Plant-inner-cover .indoor-plant-box .Indoor-plant-box-Buy {
+    font-size: 10px;
+  }
+  .View-plant-container .view-plant-inner-cover {
+    display: block;
+    margin-left: 0;
+  }
+}

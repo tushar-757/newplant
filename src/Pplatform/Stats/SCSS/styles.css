@@ -1,0 +1,104 @@
+.Stats-Container {
+  height: 25rem;
+  float: left;
+  overflow-y: auto;
+  width: 85%;
+}
+
+.Stats-Container .Stats-inner-cover {
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 2%;
+  grid-row-gap: 25px;
+  margin-bottom: 1rem;
+  width: 90%;
+  padding: 40px;
+  -webkit-box-shadow: 0px 0px 10px lightgrey;
+          box-shadow: 0px 0px 10px lightgrey;
+  border-radius: 5px;
+}
+
+.Stats-Container .Stats-inner-cover p {
+  font-size: 0.8rem;
+}
+
+.Stats-Container .Stats-inner-cover h1 {
+  font-size: 1rem;
+}
+
+.Stats-Container .Stats-inner-cover h2 {
+  font-size: 0.9rem;
+}
+
+.stats-inner-cover-box {
+  width: 800px;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  background-color: #2c2828;
+}
+
+.stats-inner-cover-box .stats-inner-cover-phot-box {
+  position: absolute;
+  top: 280px;
+  font-size: 20px;
+  color: black;
+  background: white;
+  left: -127px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.stats-inner-cover-box .stats-inner-cover-temp-box {
+  position: absolute;
+  top: 512px;
+  font-size: 20px;
+  color: black;
+  background: white;
+  left: 277px;
+}
+
+.stats-inner-cover-box .stats-inner-cover-heading-box {
+  position: absolute;
+  top: 446px;
+  font-size: 20px;
+  color: #1843bb;
+  background: white;
+  height: 2rem;
+  width: 11rem;
+  left: 327px;
+  text-align: center;
+}
+
+.stats-slide-icon {
+  position: fixed;
+  left: 755px;
+  top: 500px;
+  background-color: #00a6ff;
+  width: 2rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .Stats-Container .Stats-inner-cover {
+    margin-left: 9px;
+    width: 75%;
+    padding: 30px;
+  }
+  .stats-inner-cover-box {
+    width: 240px;
+    height: 179px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,25 @@
+.companyTopNav-container {
+  height: 8%;
+  width: 85%;
+  float: left;
+}
+.companyTopNav-container .top-nav-cover {
+  display: flex;
+  padding-left: 2%;
+}
+.companyTopNav-container .top-nav-cover .topnav-common {
+  width: 8%;
+  height: 100%;
+  margin-right: 2%;
+  color: black;
+}
+.companyTopNav-container .top-nav-cover .options-selected {
+  border-top: 5px solid #5ae26b;
+  color: #1d4;
+}
+@media only screen and (max-width: 768px) {
+  .companyTopNav-container .top-nav-cover .topnav-common {
+    width: 17%;
+    font-size: 12px;
+  }
+}

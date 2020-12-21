@@ -1,0 +1,44 @@
+.Login-Container {
+  height: 24rem;
+  float: left;
+  overflow-y: auto;
+  width: 85%;
+}
+
+.Login-Container .Login-inner-cover {
+  width: 60%;
+  -webkit-box-shadow: 0px 0px 10px #ccc8c7;
+          box-shadow: 0px 0px 10px #ccc8c7;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  height: 20rem;
+  margin-left: 10rem;
+}
+
+.Login-Container .Login-inner-cover .login-head {
+  text-align: center;
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 0px 0px 10px black;
+  margin: 2rem;
+}
+
+.Login-Container .Login-inner-cover .login-input input {
+  width: 85%;
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  border: none;
+  background: aliceblue;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.Login-Container .Login-inner-cover .login-btn {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  width: 89%;
+}
+/*# sourceMappingURL=styles.css.map */

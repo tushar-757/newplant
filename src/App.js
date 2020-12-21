@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React,{useEffect} from "react"
+import {withRouter} from 'react-router-dom';
+import Dashboard from '../src/Dashboard';
+import { NotificationContainer } from "react-notifications";
+import 'react-notifications/lib/notifications.css';
+import SubNav from '../src/Pplatform/SubNav';
 import './App.css';
-
-function App() {
+function App(props){
+  useEffect(()=>{
+      if (props.location.pathname === "/") {
+          props.history.push("/GreenOplants/Dashboard");
+      }
+  }
+  , [props.location.pathname]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      <NotificationContainer />
+      {props.location.pathname=== "/GreenOplants/Dashboard" ? <Dashboard/>:<SubNav/> }
+       </>
+  )
 
-export default App;
+}
+/* harmony default export */
+export default withRouter(App);
+
+/*<NotificationContainer/>*/
