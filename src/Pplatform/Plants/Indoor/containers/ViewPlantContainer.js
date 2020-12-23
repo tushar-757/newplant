@@ -57,7 +57,7 @@ import api from '../../../../services/api';
                     const fetchData = async()=>{
                         const images = [];
                         try {
-                            const data = await api.get(`http://localhost:8000/plant/${id}`);
+                            const data = await api.get(`https://fathomless-fortress-06365.herokuapp.com/${id}`);
                             setIndoordata(data.data);
                             console.log(data.data);
                             const images1 = await data.data.images.map(data=>{
