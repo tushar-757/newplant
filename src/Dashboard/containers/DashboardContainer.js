@@ -10,7 +10,7 @@
             }
             , [props.location.pathname]);
             useEffect(()=>{
-                  const socket=Socketio("http://localhost:8000/",{ transport : ['websocket'] })
+                  const socket=Socketio("https://fathomless-fortress-06365.herokuapp.com/",{ transport : ['websocket'] })
                   socket.emit('chat message', "hello");
                   socket.on("message",(msg)=>{console.log(msg)})
             },[])

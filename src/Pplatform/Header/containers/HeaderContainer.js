@@ -28,7 +28,7 @@ import {withRouter,useParams} from 'react-router-dom';
                 //data
 
                useEffect(async()=>{
-                    const data = await axios.get("http://localhost:8000/plants");
+                    const data = await axios.get("https://fathomless-fortress-06365.herokuapp.com/plants");
                     console.log(props.history.location);
                     console.log(data.data);
                     setdata(data.data);
