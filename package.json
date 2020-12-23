@@ -45,6 +45,11 @@
     "entryPoint": 1,
     "knownPaths": {}
   },
+  "devServer": {
+    "compress": true,
+    "inline": true,
+    "allowedHosts":".heroku.com"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
