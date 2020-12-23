@@ -91,14 +91,34 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .Stats-Container {
+    height: 38rem;
+  }
   .Stats-Container .Stats-inner-cover {
     margin-left: 9px;
-    width: 75%;
+    width: 95%;
     padding: 30px;
   }
   .stats-inner-cover-box {
     width: 240px;
     height: 179px;
+  }
+  .stats-inner-cover-box .stats-inner-cover-phot-box {
+    top: 77px;
+    left: -87px;
+  }
+  .Stats-Container .Stats-inner-cover h1 {
+    font-size: 10px;
+  }
+  .stats-inner-cover-box .stats-inner-cover-heading-box {
+    top: 142px;
+    height: 1rem;
+    width: 5rem;
+    left: 81px;
+  }
+  .stats-inner-cover-box .stats-inner-cover-temp-box {
+    top: 178px;
+    left: 12px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import "../SCSS/styles.css";
 
 function Copyright() {
   return (
@@ -87,14 +88,7 @@ export default function Dashboard() {
           <Container maxWidth="sm">
           <div className={classes.heroContent}>
                           <img  
-                                style={{
-                                    position: "absolute",
-                                    zIndex: "-1",
-                                    top: "459px",
-                                    left:0,
-                                    width: "1400px",
-                                    height: "500px"
-                                }}
+                          className="dashboard-image"
                                 src= "https://images.unsplash.com/photo-1600260449496-363800c0511b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
                             /></div>
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom   style={{fontSize: "2.8rem"

@@ -217,6 +217,9 @@ span {
 }
 
 @media only screen and (max-width: 768px) {
+  .Plant-Container {
+    height: 30rem;
+  }
   .Plant-Container .Plant-inner-cover {
     -ms-grid-columns: none;
         grid-template-columns: none;

@@ -53,12 +53,10 @@ import {withRouter,useParams} from 'react-router-dom';
 
                useEffect(()=>{
                     const filterdatafunction = ()=>{
-                        const filterdata = data.filter(d=>d.name.toLowerCase().includes(value)).map(data=>data);
+                        const filterdata = data.filter(d=>d.name.toLowerCase().includes(value.toLowerCase())).map(data=>data);
                         console.log(filterdata);
                         setfilterdata([...filterdata]);
-                    }
-                    ;
-
+                    };
                     filterdatafunction();
                 }
                 , [value]);

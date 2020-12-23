@@ -120,7 +120,7 @@ borderColor: 'rgba(255, 99, 132, 0.2)',*/
                    <h1  className= "stats-inner-cover-heading-box">
                         Spider Plant
                    </h1>       
-                   <div>
+                   <div className="graph-block">
                    <Line
                         data= {data}
                         options= {options}
@@ -139,12 +139,14 @@ borderColor: 'rgba(255, 99, 132, 0.2)',*/
                    <h1 className= "stats-inner-cover-heading-box">
                           Dracaena Plant
                    </h1>
+                   <div className="graph-block">
                     <Line
                         data= {data}
                         options= {options}
                         height= {330}
                         width= {600}
                     /></div>
+                </div>
                <div className= "stats-inner-cover-box">
                  <h1 className= "stats-inner-cover-phot-box">
                      Net Photosynthesis(umol/m2/s)
@@ -155,12 +157,13 @@ borderColor: 'rgba(255, 99, 132, 0.2)',*/
                    <h1 className= "stats-inner-cover-heading-box">
                             Snake Plant
                    </h1>
+                   <div className="graph-block">
                   <Line
                         data= {data}
                         options= {options}
                         height= {330}
                         width= {600}
-                  />
+                  /></div>
                
                <h1 style={{marginTop:"10rem",marginBottom:"0rem"}}>
                         Effect on oxygen releasing potential
@@ -178,7 +181,7 @@ borderColor: 'rgba(255, 99, 132, 0.2)',*/
                    <h1 className= "stats-inner-cover-temp-box">
                      Light exposure duration(hrs)
                    </h1>
-                   <div  style={{marginTop:"21rem"}}>
+                   <div className="graph-block" style={{marginTop:"21rem"}}>
                       <Line
                         data= {data2}
                         options= {options1}
@@ -194,12 +197,14 @@ borderColor: 'rgba(255, 99, 132, 0.2)',*/
                    <h1   className= "stats-inner-cover-temp-box">
                        Dark exposure duration(hrs)
                    </h1>
+                   <div className="graph-block">
                         <Line
                         data= {data2}
                         options= {options1}
                         height= {330}
                         width= {600}
                      />
+                     </div>
                      </div>
              <div className= "stats-slide-icon">       
               <span>

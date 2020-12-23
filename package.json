@@ -2,6 +2,7 @@
   "name": "plant",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8000",
   "dependencies": {
     "@alan-ai/alan-sdk-web": "^1.8.5",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
