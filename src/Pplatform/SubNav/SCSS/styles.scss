@@ -1,3 +1,31 @@
+.nav-head {
+  width: 5%;
+  float: left;
+  height: 5%;
+  position: absolute;
+  color: #f3f3f3;
+  left: 307px;
+  z-index: 1;
+  top: -7px;
+  padding: 1rem;
+}
+.nav-head-cont {
+  width: 14rem;
+  height: 28rem;
+  background: #41c8d4;
+  left: -198px;
+  padding: 10px;
+  top: 110px;
+  position: absolute;
+}
+.nav-btn {
+  color: white;
+  background: #1843bb;
+  border: 5px;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
 .subnav-container {
   background-color: #5b9c30;
   position: relative;

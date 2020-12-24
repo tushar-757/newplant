@@ -8,7 +8,10 @@
                 }
             }
             , [props.location.pathname]);
+<<<<<<< HEAD
          
+=======
+>>>>>>> newherohufront
             return (
                <>
                <Dashboard/>

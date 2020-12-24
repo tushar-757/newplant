@@ -75,14 +75,14 @@
 @media only screen and (max-width: 768px) {
   .Stats-Container {
     height: 38rem;
+    width: 100%;
   }
   .Stats-Container .Stats-inner-cover {
-    margin-left: 9px;
-    width: 95%;
+    width: 80%;
     padding: 30px;
   }
   .stats-inner-cover-box {
-    width: 240px;
+    width: 312px;
     height: 179px;
   }
   .stats-inner-cover-box .stats-inner-cover-phot-box {

@@ -116,6 +116,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .Header-container {
+    width: 100%;
+  }
   .Header-container .header {
     height: 50px;
     width: 54%;

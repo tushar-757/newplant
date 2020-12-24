@@ -188,8 +188,12 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .View-plant-container {
+    width: 100%;
+  }
   .Plant-Container {
     height: 30rem;
+    width: 100%;
   }
   .Plant-Container .Plant-inner-cover {
     grid-template-columns: none;

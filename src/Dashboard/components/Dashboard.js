@@ -68,6 +68,7 @@ export default function Dashboard() {
                     console.log(data.data);
                 }
                 , []);
+              
   return (
     <React.Fragment>
       <CssBaseline />
@@ -133,3 +134,11 @@ export default function Dashboard() {
     </React.Fragment>
   );
 }
+/**  useLayoutEffect(() => {
+                  function updateSize() {
+                    console.log([window.innerWidth, window.innerHeight]);
+                  }
+                  window.addEventListener('resize', updateSize);
+                  updateSize();
+                  return () => window.removeEventListener('resize', updateSize);
+                }, []); */
