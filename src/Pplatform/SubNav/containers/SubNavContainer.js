@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useLayoutEffect,useState,useEffect } from "react";
 import SubNav from "../components/SubNav";
 import { Route, withRouter } from "react-router-dom";
 import Header from '../../Header';
@@ -17,6 +17,8 @@ function RouteWithSubRoutes({ route }) {
 }
 
 function SubNavContainer(props) {
+  const [slide,setslide]=useState();
+  const [toggle,settoggle]=useState(false);
   useEffect(() => {
     if (props.location.pathname === "/platform") {
         props.history.push("/platform/dashboard");
@@ -24,9 +26,24 @@ function SubNavContainer(props) {
         props.history.push("/platform/Plants/Indoor");
     }
   }, [props.history.location]);
+
+  useLayoutEffect(() => {
+    function updateSize() {
+      setslide(window.innerWidth);
+    }
+    window.addEventListener('resize', updateSize);
+    updateSize();
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
+  const handletoggle=()=>{
+    settoggle(true)
+  }
+  const handletoggle1=()=>{
+    settoggle(false)
+  }
   return (
     <Fragment>
-        <SubNav /> 
+        <SubNav wid={slide} togglefunc={handletoggle} toggle={toggle} togglefunc1={handletoggle1}/> 
         <Header/>
         {routes.map((route, i) => {
           return <RouteWithSubRoutes key={i} route={route} />;

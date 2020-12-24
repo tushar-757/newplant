@@ -225,6 +225,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .Review-container {
+    width: 100%;
+  }
   .Review-container .Review-inner-cover {
     display: -ms-grid;
     display: grid;
