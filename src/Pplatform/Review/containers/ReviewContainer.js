@@ -92,7 +92,8 @@ function ReviewContainer() {
     }
     , []);
 
-    const valuehandler = e=>{
+    const valuehandler = (e,value)=>{
+        console.log(value)
         setvalue(e.target.value);
     }
     ;

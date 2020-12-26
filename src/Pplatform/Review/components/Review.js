@@ -84,8 +84,8 @@ function Review({submit, data, setvalue, setrating, show, close, Delete, history
                                             </>
                                     : <div><span>
                                             <input
-                                                onChange= {e=>setvalue(e)}
-                                                defaultValue= {data.text}
+                                                onChange= {(e)=>setvalue(e,data.text)}
+                                                defaultValue={data.text}
                                                 class= "form-control"
                                                 className= "input-box-edit"/>
                                                 </span>
@@ -106,7 +106,7 @@ function Review({submit, data, setvalue, setrating, show, close, Delete, history
                                     <p>{ data.text}</p>
                                   <ReactStars
                                         {...firstExample}
-                                        value= {data.rating}/>    
+                                        value={data.rating}/>    
                                </div>}
                          </div>
                     </div>)}
