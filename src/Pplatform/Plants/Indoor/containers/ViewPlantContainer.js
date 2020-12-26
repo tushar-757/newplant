@@ -1,10 +1,11 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState,useEffect,useLayoutEffect} from 'react';
 import ViewPlant from "../components/ViewPlant";
 import {useParams} from 'react-router-dom';
 import api from '../../../../services/api';
 
   function ViewplantContainer(props) {
                 let {id} = useParams();
+                const [slide,setslide]=useState();
                 const [indoordata,setIndoordata] = useState([]);
                 const [images,setimages] = useState([]);
                 const [toggle,setoggle] = useState(false);
@@ -81,6 +82,15 @@ import api from '../../../../services/api';
                     fetchData();
                 }
                 , [id]);
+                
+  useLayoutEffect(() => {
+    function updateSize() {
+      setslide(window.innerWidth);
+    }
+    window.addEventListener('resize', updateSize);
+    updateSize();
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
                 return(
                <ViewPlant
                     data={indoordata}
@@ -91,6 +101,7 @@ import api from '../../../../services/api';
                     expand={expandimage}
                     images={images}
                     cred={cred}
+                    wid={slide} 
               />)
             }
             export default ViewplantContainer;

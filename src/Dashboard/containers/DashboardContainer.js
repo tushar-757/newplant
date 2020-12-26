@@ -8,7 +8,6 @@
                 }
             }
             , [props.location.pathname]);
-         
             return (
                <>
                <Dashboard/>

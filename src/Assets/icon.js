@@ -14,7 +14,9 @@ import {
   faTools,
   faSearch,
   faStar,
-  faSignal
+  faSignal,
+  faBars,
+  faTimesCircle
 } from "@fortawesome/free-solid-svg-icons";
 const icons = {
     fileEdit: <FontAwesomeIcon 
@@ -92,6 +94,18 @@ const icons = {
         icon={faSignal}
         size= "1x"
         color= "#00a6ff"
+   />,
+   bars:
+   <FontAwesomeIcon
+   icon={faBars}
+   size="1x"
+   color="white"
+   />,
+   cross:
+   <FontAwesomeIcon
+   icon={faTimesCircle}
+   size="1x"
+   color="white"
    />
 }
 export default icons;

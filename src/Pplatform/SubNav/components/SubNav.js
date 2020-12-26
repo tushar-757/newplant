@@ -4,6 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
+import icon from '../../../Assets/icon';
 import {NavLink,Link,withRouter} from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -29,9 +30,9 @@ function SubNav(props) {
         <>
      {(props.wid<650)?
         <div className="nav-head">
-            {!props.toggle?<button className="nav-btn"onClick={()=>props.togglefunc()}>:</button>:
+            {!props.toggle?<button className="nav-btn"onClick={()=>props.togglefunc()}>{icon.bars}</button>:
             <>
-            <button className="nav-btn" onClick={()=>props.togglefunc1()}>x</button>
+            <button className="nav-btn" onClick={()=>props.togglefunc1()}>{icon.cross}</button>
               <div className="nav-head-cont">
                     <NavLink to="/"
             activeClassName="subnav-common  options-selected"

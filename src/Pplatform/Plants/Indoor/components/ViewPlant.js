@@ -18,7 +18,7 @@ function ViewPlant(props) {
             <div  className= "view-plant-inner-cover-left-block">     
                 <NavLink
                     to= "/platform/Plants/Indoor">
-                    <div style= {{  margin:"1rem" }} >
+                    <div style= {{  margin:"1rem" }} className="bavkarrow">
                         <span>
                              {icon.backArrow2}
                              </span>
@@ -28,27 +28,45 @@ function ViewPlant(props) {
                     { props.data.name}
                     </h1>
                {images.length !== 0 ?
-               <SimpleImageSlider
+               <>
+                {(props.wid<650)?<SimpleImageSlider
                style= {{
                 margin: "0 auto",
                 marginTop: "50px"
             }}
             className="image-slider"
-            width={ 400}
-            height={ 400}
+            width={200}
+            height={200}
             images= {images}
             showBullets={ props.cred.showBullets}
             showNavs={ props.cred.showNavs}
             useGPURender= {props.cred.useGPURender}
             navStyle= {props.cred.navStyle}
-            slideDuration= {props.cred.slideDuration}/>:null}
-                <div style= {{margin: "2rem"  }}>     
+            slideDuration= {props.cred.slideDuration}/>
+             :<SimpleImageSlider
+               style= {{
+                margin: "0 auto",
+                marginTop: "50px"
+            }}
+            className="image-slider"
+            width={400}
+            height={400}
+            images= {images}
+            showBullets={ props.cred.showBullets}
+            showNavs={ props.cred.showNavs}
+            useGPURender= {props.cred.useGPURender}
+            navStyle= {props.cred.navStyle}
+            slideDuration= {props.cred.slideDuration}/>
+            }</>:null}
+                <div style= {{margin: "2rem"  }}>
+                    <div className="bar-graph">     
                    <Bar
                         data= {props.chartdata}
                         height= {330}
                         width={ 600}
                         options= {props.options}
                     />
+                        </div>
                     <span>
                         { props.data.about}
                    </span>
@@ -58,11 +76,13 @@ function ViewPlant(props) {
                <h1>
                     { props.data.name}
                </h1>
+               <div className="doughnut-chart">
               < Doughnut
                     height= {130}
                     width= {200}
                     data= {props.chartdata1}
                />
+               </div>
                 <img
                     src= {props.data.image_url}
                     onClick= {()=>props.expand()}
@@ -72,7 +92,7 @@ function ViewPlant(props) {
                     <div  className= "Indoor-plant-box-Buy">
                          <span>
                             Buy on Amazon {icon.shoppingcart}
-                            </span>
+                        </span>
                         </div>
                         </div>
                         </div>
