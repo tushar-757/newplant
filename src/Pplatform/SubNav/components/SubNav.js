@@ -26,7 +26,7 @@ function SubNav(props) {
     return (
         <>
      {(props.wid<650)?
-        <div className="nav-head">
+        <div className="nav-head" >
             {!props.toggle?<button className="nav-btn"onClick={()=>props.togglefunc()}>{icon.bars}</button>:
             <>
             <button className="nav-btn" onClick={()=>props.togglefunc1()}>{icon.cross}</button>

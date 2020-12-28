@@ -47,7 +47,6 @@ function Header({label, icon1, data, setoggle, toggle, gotoview, setvalue, value
                 <div className="Search-item">
                    {data.map(data=>  
                    <>  
-                    {console.log(data)}
                    <div className="Search-item-box" onClick={()=>gotoview(data._id)}>
                        <p>{data.name}</p>
                     </div></>)

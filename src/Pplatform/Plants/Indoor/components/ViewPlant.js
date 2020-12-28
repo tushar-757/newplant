@@ -59,12 +59,14 @@ function ViewPlant(props) {
             slideDuration= {props.cred.slideDuration}/>
             }</>:null}
                 <div style= {{margin: "2rem"  }}>   
-                    {(props.wid<650)?<Bar
+                    {(props.wid<650)?
+                    <div>
+                    <Bar
                         data= {props.chartdata}
                         height= {400}
                         width={400}
                         options= {props.options}
-                    />:<Bar
+                    /></div>:<Bar
                     data= {props.chartdata}
                     height= {330}
                     width={ 600}
@@ -78,18 +80,16 @@ function ViewPlant(props) {
                <h1>
                     { props.data.name}
                </h1>
-               <div className="doughnut-chart">
-                <Doughnut
-               height= {130}
-               width= {200}
+               {(props.wid<650)?<Doughnut
+               height= {230}
+               width= {400}
                data= {props.chartdata1}
-          />
-               </div>
-                <img
-                    src= {props.data.image_url}
-                    onClick= {()=>props.expand()}
-                    className= "a"
-                    />
+          />: <div className="doughnut-chart"><Doughnut
+          height= {130}
+          width= {200}
+          data= {props.chartdata1}
+     /></div>}
+               
                 <div  style= {{ display:"flex" }}>
                     <div  className= "Indoor-plant-box-Buy">
                          <span>
@@ -102,3 +102,8 @@ function ViewPlant(props) {
       </div>);
 }
 export default ViewPlant;
+/* <img
+                    src= {props.data.image_url}
+                    onClick= {()=>props.expand()}
+                    className= "a"
+                    />*/
