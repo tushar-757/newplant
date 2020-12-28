@@ -1,9 +1,6 @@
 import React from 'react';
 import '../SCSS/styles.css';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
 import icon from '../../../Assets/icon';
 import {NavLink,Link,withRouter} from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({

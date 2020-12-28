@@ -35,8 +35,8 @@ function ViewPlant(props) {
                 marginTop: "50px"
             }}
             className="image-slider"
-            width={200}
-            height={200}
+            width={300}
+            height={300}
             images= {images}
             showBullets={ props.cred.showBullets}
             showNavs={ props.cred.showNavs}
@@ -58,15 +58,17 @@ function ViewPlant(props) {
             navStyle= {props.cred.navStyle}
             slideDuration= {props.cred.slideDuration}/>
             }</>:null}
-                <div style= {{margin: "2rem"  }}>
-                    <div className="bar-graph">     
-                   <Bar
+                <div style= {{margin: "2rem"  }}>   
+                    {(props.wid<650)?<Bar
                         data= {props.chartdata}
-                        height= {330}
-                        width={ 600}
+                        height= {400}
+                        width={400}
                         options= {props.options}
-                    />
-                        </div>
+                    />:<Bar
+                    data= {props.chartdata}
+                    height= {330}
+                    width={ 600}
+                    options= {props.options} />}
                     <span>
                         { props.data.about}
                    </span>
@@ -77,11 +79,11 @@ function ViewPlant(props) {
                     { props.data.name}
                </h1>
                <div className="doughnut-chart">
-              < Doughnut
-                    height= {130}
-                    width= {200}
-                    data= {props.chartdata1}
-               />
+                <Doughnut
+               height= {130}
+               width= {200}
+               data= {props.chartdata1}
+          />
                </div>
                 <img
                     src= {props.data.image_url}

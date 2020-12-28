@@ -1,18 +1,14 @@
 import React ,{useRef,useEffect}from 'react';
 function Tool(){
  
-
- 
     return(
     <div className= "Plant-Container">
         <div className= "Plant-inner-cover">
-        <img src="https://alan.app/voice/images/previews/preview.jpg"
-        className="Alan-logo" alt="logo" />
+        <img style={{ width:"100%"}}src="https://alan.app/voice/images/previews/preview.jpg" className="Alan-logo" alt="logo" />
       <ul>
         <li>Say: "Hi!"</li>
         <li>Say: "What is Alan Platform?"</li>
       </ul>
-     
          </div>
     </div>
     );
