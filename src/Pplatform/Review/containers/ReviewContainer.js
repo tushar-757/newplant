@@ -117,18 +117,12 @@ function ReviewContainer() {
     //deletehabdler
 
     const DeleteHandler = async id=>{
-        const success=await api.delete('/deletereview', {
+        setdelete(true);
+        await api.delete('/deletereview', {
             headers: {
                 review_id: id
             }
         });
-        if(success){
-            console.log("succes");
-            window.location.reload();
-        }else{
-            console.log("bad request")
-            NotificationManager.warning("503,server overloaded", "", 2000);
-        }
     }
     ;
     //SavesubmitHandler
