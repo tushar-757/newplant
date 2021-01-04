@@ -123,7 +123,7 @@ function ReviewContainer() {
             }
         });
         if(success){
-            setdelete(true)
+            window.location.reload();
         }else{
             NotificationManager.warning("503,server overloaded", "", 2000);
         }
