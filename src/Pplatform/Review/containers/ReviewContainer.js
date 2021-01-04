@@ -117,12 +117,12 @@ function ReviewContainer() {
     //deletehabdler
 
     const DeleteHandler = async id=>{
+        setdelete(true);
         await api.delete('/deletereview', {
             headers: {
                 review_id: id
             }
         });
-        setdelete(true);
     }
     ;
     //SavesubmitHandler
