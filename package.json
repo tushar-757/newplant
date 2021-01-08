@@ -12,7 +12,7 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.1",
     "@testing-library/user-event": "^12.2.2",
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "bundle": "^2.1.0",
     "chart.js": "^2.9.4",
     "react": "^17.0.1",
@@ -47,7 +47,7 @@
   "devServer": {
     "compress": true,
     "inline": true,
-    "allowedHosts":".heroku.com"
+    "allowedHosts": ".heroku.com"
   },
   "browserslist": {
     "production": [
